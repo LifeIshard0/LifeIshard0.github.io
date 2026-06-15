@@ -1,51 +1,332 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jason Tsoi | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      line-height: 1.6;
-      color: #222;
-    }
-    h1, h2 { margin-bottom: 10px; }
-    .project {
-      border: 1px solid #ddd;
-      padding: 16px;
-      margin: 16px 0;
-      border-radius: 10px;
-    }
-    a { color: #0066cc; }
-  </style>
+  <meta name="description" content="Kam Fung Tsoi - AI-focused full-stack developer portfolio featuring RAG, ML, finance sentiment analysis, backend APIs, and computer graphics projects." />
+  <title>Kam Fung Tsoi | AI & Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Jason Tsoi</h1>
-  <p>Computer Science student at the University of Leeds interested in software, AI, and automation.</p>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Go to top">Kam Fung Tsoi</a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <h2>Projects</h2>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">AI-focused full-stack developer</p>
+        <h1>I build practical AI, data, and web applications.</h1>
+        <p class="hero-text">
+          I am a UK-based software developer interested in AI applications, backend systems,
+          machine learning pipelines, and product-minded full-stack development. My work includes
+          RAG chatbots, finance sentiment analysis, deployed APIs, hackathon prototypes, and computer graphics.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://github.com/LifeIshard0" target="_blank" rel="noopener noreferrer">View GitHub</a>
+          <a class="button secondary" href="#projects">See Projects</a>
+          <a class="button ghost" href="assets/CV.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Profile summary">
+        <span class="status-dot"></span>
+        <h2>Currently focused on</h2>
+        <ul>
+          <li>RAG and LLM-backed web applications</li>
+          <li>Python/FastAPI/Django backend systems</li>
+          <li>Machine learning and NLP pipelines</li>
+          <li>Workflow automation and personal AI tools</li>
+        </ul>
+      </aside>
+    </section>
 
-  <div class="project">
-    <h3>Project One</h3>
-    <p>Built a web app that solves X using Y and Z.</p>
-    <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
-  </div>
+    <section class="section container intro-grid" aria-label="Portfolio highlights">
+      <div class="metric-card">
+        <span class="metric">6</span>
+        <p>featured projects across AI, ML, backend, graphics, and finance</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric">3</span>
+        <p>hackathon / competition experiences: Leeds AI Hackathon, Microsoft AI Agents Hackathon, UBS Finance Challenge 2026</p>
+      </div>
+      <div class="metric-card">
+        <span class="metric">Full-stack</span>
+        <p>comfortable connecting frontend, backend APIs, data pipelines, and deployment</p>
+      </div>
+    </section>
 
-  <div class="project">
-    <h3>Project Two</h3>
-    <p>Created a machine learning project for X with Python and pandas.</p>
-    <p><a href="#">GitHub</a></p>
-  </div>
+    <section id="projects" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Featured Projects</h2>
+        <p>
+          These are the projects I would highlight for job applications. Some coursework or competition work is private,
+          so I show a short case study and screenshots where appropriate.
+        </p>
+      </div>
 
-  <h2>Skills</h2>
-  <p>Python, JavaScript, HTML, CSS, Git, Machine Learning</p>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-topline">
+            <span class="tag">RAG</span>
+            <span class="tag">Full-stack</span>
+            <span class="tag">AI</span>
+          </div>
+          <h3>FAQ Chatbot MVP</h3>
+          <p>
+            A business FAQ chatbot MVP designed to answer questions from company documents using a retrieval-augmented generation workflow.
+          </p>
+          <ul class="project-points">
+            <li>Frontend chat interface for asking business questions</li>
+            <li>Backend API layer for retrieval and answer generation</li>
+            <li>Designed as a foundation for a customizable chatbot service</li>
+          </ul>
+          <p class="stack">Next.js · TypeScript · FastAPI · Python · RAG · ChromaDB · OpenAI · Ollama</p>
+          <div class="card-actions">
+            <a href="https://github.com/LifeIshard0/AI-Chatbot" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </article>
 
-  <h2>Contact</h2>
-  <p>Email: your-email@example.com</p>
-  <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+        <article class="project-card featured">
+          <div class="project-topline">
+            <span class="tag">Backend</span>
+            <span class="tag">API</span>
+            <span class="tag">Deployment</span>
+          </div>
+          <h3>BookIQ</h3>
+          <p>
+            A deployed book catalogue API with authentication, role-based permissions, CSV import, search, recommendations, analytics, and MCP support for AI-agent use.
+          </p>
+          <ul class="project-points">
+            <li>JWT authentication and Reader/Curator/Admin role permissions</li>
+            <li>PostgreSQL full-text search and hybrid Reciprocal Rank Fusion ranking</li>
+            <li>Railway deployment with generated API documentation</li>
+          </ul>
+          <p class="stack">Python · Django · Django REST Framework · PostgreSQL · Railway · pytest · MCP</p>
+          <div class="card-actions">
+            <a href="https://github.com/LifeIshard0/BookIQ" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+            <a href="https://web-production-bca62.up.railway.app/api/docs/" target="_blank" rel="noopener noreferrer">API Docs</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="tag">NLP</span>
+            <span class="tag">Finance</span>
+            <span class="tag">Streamlit</span>
+          </div>
+          <h3>UBS Sentiment Analysis</h3>
+          <p>
+            A macro trend sentiment pipeline for the CMOS image sensor market, built for UBS Finance Challenge 2026.
+          </p>
+          <ul class="project-points">
+            <li>Collects official company news and market-wide articles</li>
+            <li>Scores financial text sentiment using FinBERT</li>
+            <li>Presents macro sentiment trends in a Streamlit dashboard</li>
+          </ul>
+          <p class="stack">Python · Streamlit · FinBERT · GDELT · pandas · transformers</p>
+          <div class="card-actions">
+            <a href="https://github.com/LifeIshard0/Sentiment-Analysis" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-topline">
+            <span class="tag">Hackathon</span>
+            <span class="tag">ML</span>
+            <span class="tag">Azure</span>
+          </div>
+          <h3>Diabetes Detector</h3>
+          <p>
+            A hackathon prototype that predicts diabetes risk from medical inputs and generates diet suggestions using Azure OpenAI services.
+          </p>
+          <ul class="project-points">
+            <li>Predicts diabetes risk from inputs such as age, BMI, glucose, blood pressure, and insulin</li>
+            <li>Uses a web UI connected to a Python FastAPI backend</li>
+            <li>Built during <a href="https://www.credly.com/badges/2e2414db-81ff-47e7-957e-ab45a19e7b31" target="_blank" rel="noopener noreferrer"><u>Hack Together: AI Agents Hackathon</u></a></li>
+          </ul>
+          <p class="stack">React · FastAPI · Python · scikit-learn · pandas · Azure OpenAI</p>
+          <div class="card-actions">
+            <a href="https://github.com/SruthiProfessionalDev/DiabetesDetector" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card private-project">
+          <div class="project-topline">
+            <span class="tag">Final Year Project</span>
+            <span class="tag">Explainable AI</span>
+          </div>
+          <h3>Explainable Poker AI Agent</h3>
+          <p>
+            A final-year project that analyses heads-up no-limit Texas Hold'em hand histories and explains player decisions using interpretable models and rule-based poker signals.
+          </p>
+          <ul class="project-points">
+            <li>Parses single-hand and multi-hand poker history files</li>
+            <li>Builds preflop, flop, turn, and river datasets</li>
+            <li>Trains classification-tree action and sizing models</li>
+          </ul>
+          <p class="stack">Python · Streamlit · ML models · pytest · Ollama optional</p>
+          <div class="card-actions">
+            <a href="https://github.com/LifeIshard0/Explainable-Poker-AI" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+          </div>
+        </article>
+
+        <article class="project-card private-project">
+          <div class="project-topline">
+            <span class="tag">Private Coursework</span>
+            <span class="tag">Computer Graphics</span>
+          </div>
+          <h3>Computer Graphics Renderer</h3>
+          <p>
+            A 3D graphics coursework project demonstrating matrix transforms, OpenGL rendering, texturing, custom models, animation, tracking cameras, split-screen rendering, particles, UI, and performance measurement.
+          </p>
+          <ul class="project-points">
+            <li>Implemented key renderer systems including transforms, custom model, animation, tracking cameras, particles, UI, and performance measurement</li>
+            <li>Measured GPU rendering time with OpenGL timestamp queries and CPU timing with C++ chrono</li>
+            <li>Private repository; selected screenshots are shown below</li>
+          </ul>
+          <p class="stack">C++ · OpenGL · GLSL · Computer Graphics · Performance Measurement</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container gallery-section" aria-labelledby="graphics-gallery-title">
+      <div class="section-heading compact">
+        <p class="eyebrow">Private coursework screenshots</p>
+        <h2 id="graphics-gallery-title">Computer Graphics Renderer Demo</h2>
+        <p>
+          Selected images from the private computer graphics renderer project. These show the visual outputs only;
+          source code is not public because it was coursework.
+        </p>
+      </div>
+      <div class="gallery-grid">
+        <figure>
+          <img src="assets/custom-model.jpg" alt="Custom spaceship model rendered above terrain" loading="lazy" />
+          <figcaption>Custom models</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/animation.jpg" alt="Animated spaceship with exhaust over terrain" loading="lazy" />
+          <figcaption>Animation and exhaust effect</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/UI.jpg" alt="UI Rendering with two buttons" loading="lazy" />
+          <figcaption>UI Rendering</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/performance.jpg" alt="Charts comparing GPU and CPU rendering time" loading="lazy" />
+          <figcaption>Performance measurements</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="skills" class="section container split-section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Technical profile</p>
+        <h2>Skills & Tools</h2>
+        <p>Technologies I have used across coursework, hackathons, personal projects, and MVP builds.</p>
+      </div>
+      <div class="skill-groups">
+        <div>
+          <h3>Programming Languages</h3>
+          <p>Python, TypeScript, JavaScript, C++, C, SQL, Java, R</p>
+        </div>
+
+        <div>
+          <h3>Frontend Development</h3>
+          <p>React, Next.js, Streamlit, Tailwind CSS, Bootstrap, HTML5, CSS3, Responsive Design</p>
+        </div>
+
+        <div>
+          <h3>Backend & APIs</h3>
+          <p>FastAPI, Django REST Framework, REST APIs, Authentication, RBAC, API Documentation</p>
+        </div>
+
+        <div>
+          <h3>AI & Machine Learning</h3>
+          <p>Retrieval-Augmented Generation (RAG), Natural Language Processing (NLP), Information Retrieval, Text Classification, Sentiment Analysis, OpenAI API, Azure OpenAI, LangChain, ChromaDB, FinBERT, Transformers, scikit-learn, Prompt Engineering</p>
+        </div>
+
+        <div>
+          <h3>Data & Analytics</h3>
+          <p>pandas, NumPy, Data Mining, Data Cleaning, Data Analysis, Exploratory Data Analysis (EDA), Feature Engineering, Data Visualization, Structural Equation Modeling (PLS-SEM, CB-SEM), Matplotlib</p>
+        </div>
+
+        <div>
+          <h3>Databases</h3>
+          <p>PostgreSQL, SQLite, SQL Querying, Database Design</p>
+        </div>
+
+        <div>
+          <h3>Cloud & Developer Tools</h3>
+          <p>Git, GitHub, Linux/WSL, Railway, Azure, pytest, uv, npm, VS Code, PythonAnywhere</p>
+        </div>
+
+        <div>
+          <h3>Currently Learning</h3>
+          <p>n8n, Zapier, Airtable, AI Workflow Automation, Personal AI Agents, Cybersecurity Fundamentals</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section container timeline-section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Experience signals</p>
+        <h2>Hackathons, Competitions & Coursework</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Final Year Project</h3>
+          <p>Explainable Poker AI Agent - interpretable ML models and explanation pipeline for poker decision analysis.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>UBS Finance Challenge 2026</h3>
+          <p>Financial sentiment analysis pipeline and dashboard for macro trend monitoring.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Hack Together: AI Agents Hackathon</h3>
+          <p>Diabetes Detector prototype with ML prediction and Azure OpenAI diet suggestion workflow.</p>
+          <a href="https://www.credly.com/badges/2e2414db-81ff-47e7-957e-ab45a19e7b31" target="_blank" rel="noopener noreferrer"><u>Badge</u></a>
+        </div>
+        <div class="timeline-item">
+          <h3>Leeds AI Hackathon</h3>
+          <p>Personal tutor / AI learning support prototype.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Contact me</h2>
+        <p>
+          Please reach out if you would like to discuss potential opportunities or collaborations.
+        </p>
+        <p class="contact-info">
+          Phone: +44 7568 965819<br />
+          Email: jntsoi09@gmail.com
+        </p>
+      </div>
+      <div class="contact-card">
+        <a href="https://github.com/LifeIshard0" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/kam-fung-tsoi-4423a4309" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:jntsoi09@gmail.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Kam Fung Tsoi. Built with HTML and CSS for GitHub Pages.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
 </body>
 </html>
